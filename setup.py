@@ -10,7 +10,7 @@ README = (HERE / 'README.md').read_text()
 # This call to setup() does all the work
 setup(
     name='namedassignments',
-    version='1.0.0',
+    version='1.0.2',
     description='Really small library to implement NamedExpressions in Python 3.8 to older versions of Python.',
     long_description=README,
     long_description_content_type='text/markdown',

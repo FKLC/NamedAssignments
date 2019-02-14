@@ -1,5 +1,5 @@
 class NamedAssignments:
-    def __call__(self, name, function, *args, **kwargs):
+    def __new__(cls, name, function, *args, **kwargs):
         value = function(*args, **kwargs)
         setattr(NamedAssignments, name, value)
         return value

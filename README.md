@@ -44,14 +44,20 @@ For original examples you can check [PEP 572 examples](https://www.python.org/de
 ## Usage
 Usage is not clean as original due to limitations but it is the cleanest way I found.
 ```python
-from namedassignments import NamedAssignments
+from namedassignments import NamedAssignments as N
 
-N = NamedAssignments()
 N(variable_name, function, *args, **kwargs)
 ```
 
+## Installation
+Library is avaible on PyPi so just run
+```
+pip install namedassignments
+```
+
 ## API
-* `__call__` Arguments:
+Since the whole code is only 5 lines there is nothing too much. Library uses Python's magic method `__new__` to return what function returns this is all library does on the background.
+* `__new__` Arguments:
   * `variable_name`: Variable name you want to use while retrieving data. (String) (Required)
   * `function`: Function you want to execute. (Function) (Required)
   * `*args`: Arguments you want to pass function. (List) (Optional)
